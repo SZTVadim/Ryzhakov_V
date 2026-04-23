@@ -30,7 +30,10 @@ print(st_4)
 st_space = "  Hello World  "
 
 stsp_1 = st_space.strip(' ')
-stsp_2 = st_space.lstrip(' ')"""ЗАДАНИЕ 1: Работа с типами данных"""
+stsp_2 = st_space.lstrip(' ')
+
+"""ЗАДАНИЕ 1: Работа с типами данных"""
+
 Hello = 'Привет'
 Num_int = 42
 Num_float = 3.14
@@ -84,7 +87,7 @@ print(fruits_s)
 """ЗАДАНИЕ 5: Замена подстрок"""
 
 st_py = "Я изучаю Python. Python - это круто!"
-st_ja = st_py.replace("Python","Java")
+st_ja = st_py.replace("Python", "Java")
 
 print("\n")
 print(st_ja)
@@ -143,7 +146,7 @@ print(fruits_s)
 """ЗАДАНИЕ 5: Замена подстрок"""
 
 st_py = "Я изучаю Python. Python - это круто!"
-st_ja = st_py.replace("Python","Java")
+st_ja = st_py.replace("Python", "Java")
 
 print("\n")
 print(st_ja)
