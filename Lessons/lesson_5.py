@@ -37,21 +37,23 @@ numbers.reverse()
 print(numbers)
 
 """ЗАДАНИЕ 5:"""
+cubes = [n ** 3 for n in range(1, 8)]
 
 print()
-print(min([n ** 3 for n in range(1, 8)]))
-print(max([n ** 3 for n in range(1, 8)]))
+print(min(cubes))
+print(max(cubes))
 
 """ЗАДАНИЕ 6:"""
 numbers = [5, 12, 8, 15, 3, 20, 7, 18, 9, 11]
+generator_n = [n for n in numbers if n > 10]
 
 print()
-print([n for n in numbers if n > 10])
-print(sum([n for n in numbers if n > 10]))
+print(generator_n)
+print(sum(generator_n))
 
 """ЗАДАНИЕ 7:"""
-cites = ["москва", "санкт-петербург", "казань"]
+cities = ["москва", "санкт-петербург", "казань"]
+ci = [city.capitalize() for city in cities]
 
-ci = [city.capitalize() for city in cites]
 print()
 print(ci)
