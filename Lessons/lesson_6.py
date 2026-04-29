@@ -56,4 +56,3 @@ for key, value in student2.items():
         student3[key] = [old_value, value]
 
 print(student3)
-
