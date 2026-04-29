@@ -54,5 +54,4 @@ for key, value in student2.items():
     else:
         old_value = student3[key]
         student3[key] = [old_value, value]
-
 print(student3)
