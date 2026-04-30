@@ -38,6 +38,7 @@ print(prices2)
 print()
 
 print("ЗАДАНИЕ 3: Объединение словарей")
+print()
 student1 = {"имя": "Иван", "возраст": 20, "курс": 2}
 student2 = {"имя": "Мария", "возраст": 21, "город": "Санкт-Петербург"}
 
@@ -45,13 +46,5 @@ student1.update(student2)
 print(student1)
 print(student2)
 student1 = {"имя": "Иван", "возраст": 20, "курс": 2}
-
-student3 = {key: value for key, value in student1.items()}
-
-for key, value in student2.items():
-    if key not in student3:
-        student3[key] = value
-    else:
-        old_value = student3[key]
-        student3[key] = [old_value, value]
+student3 = {**student1, **student2}
 print(student3)
