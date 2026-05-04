@@ -1,8 +1,7 @@
-print()
 print('ЗАДАНИЕ 1: Работа с множествами')
-print()
 
 fruits = {"яблоко", "банан"}
+
 fruits.add("апельсин")
 print(fruits)
 fruits.update(["груша", "виноград"])
@@ -11,16 +10,12 @@ fruits.discard("банан")
 print(fruits)
 fruits.discard("киви")
 print(fruits)
-"""fruits.remove("киви")"""
-fruits.pop()
-print(fruits)
-
-print()
-print('=' * 53)
-print()
+# fruits.remove("киви")
+fru = fruits.pop()
+print(fru)
 
 print('ЗАДАНИЕ 2: Работа с кортежами')
-print()
+
 coordinates = (10, 20, 30, 20, 10, 20, 40)
 
 print(coordinates[0])
@@ -32,9 +27,8 @@ print(coordinates.count(20))
 print(coordinates.count(50))
 print(len(coordinates))
 
-print()
-print('=' * 53)
 print('ЗАДАНИЕ 3: Операции с кортежами')
+
 tuple1 = (1, 2, 3)
 tuple2 = (4, 5, 6)
 numbers = [10, 20, 30, 40, 50]
@@ -50,4 +44,5 @@ print(first, middle, last)
 print(tuple(numbers))
 print(tuple(x for x in range(11) if x % 2 == 0))
 print(tuple(x ** 2 for x in range(1, 6)))
-print(42,)
+ty = 42,
+print(ty)
