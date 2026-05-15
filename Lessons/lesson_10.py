@@ -4,10 +4,10 @@ def calculate_total(price, tax_percent):
     if tax_percent > 20 or price < 0:
         return f"Ошибка! {tax_percent} > 20 % или возможно {price} < 0"
     else:
-        return price, tax_percent
+        return price + (price * tax_percent / 100)
 
 
-print((calculate_total(10, 21)))
+print((calculate_total(100, 5)))
 
 
 def get_level(points):
@@ -24,7 +24,7 @@ def get_level(points):
         print(f"Ошибка! {points} не является числом")
 
 
-get_level('17.2')
+get_level(-49)
 
 
 # ЗАДАНИЕ 2: Функции с условиями и match/case
