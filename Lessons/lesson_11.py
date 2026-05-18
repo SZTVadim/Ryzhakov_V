@@ -8,7 +8,7 @@ class Book:
         self.pages = pages
 
     def get_info(self):
-        return f"Название книги: {self.title} \nАвтор книги: {self.author} \nКоличество страниц в книге: {self.pages}"
+        return f"'{self.title}' автор {self.author}, {self.pages} стр."
 
     def is_long(self):
         if self.pages > 300:
@@ -46,7 +46,8 @@ class BankAccount:
             self.balance -= amount
             return True
         else:
-            return "Недостаточно средств"
+            print("Недостаточно средств")
+            return False
 
     def get_balance(self):
         return self.balance
