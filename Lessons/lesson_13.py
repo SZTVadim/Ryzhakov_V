@@ -58,18 +58,18 @@ cat1 = Cat("Мурка", 2)
 
 zoo = Zoo("Городской зоопарк")
 
-zoo.add_animal(Dog("Бобик", 3))
-zoo.add_animal(Dog("Шарик", 5))
-zoo.add_animal(Cat("Мурка", 2))
+zoo.add_animal(dog1)
+zoo.add_animal(dog2)
+zoo.add_animal(cat1)
 
 print(zoo.get_animals_count())
 
 for animal in zoo._Zoo__animals:
-    animal.make_sound()
+    animal_sound(animal)
 
 animal_sound(Dog('Рекс', 6))
 
 # Наш объект Animal попадает в функцию animal_sound
 # После, он инициализируется в классе Animal
-# Далее идёт вызов функции make_cound в классе Animal
+# Далее идёт вызов функции make_sound в классе Animal
 # Затем, в зависимости от животного выполняется наследованный класс
