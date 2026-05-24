@@ -43,6 +43,9 @@ class Zoo:
     def get_animals_count(self):
         return len(self.__animals)
 
+    def get_animals(self):
+        return self.__animals
+
 
 # ЧАСТЬ 4: Полиморфизм - Работа с разными животными
 
@@ -64,7 +67,7 @@ zoo.add_animal(cat1)
 
 print(zoo.get_animals_count())
 
-for animal in zoo._Zoo__animals:
+for animal in zoo.get_animals():
     animal_sound(animal)
 
 animal_sound(Dog('Рекс', 6))
