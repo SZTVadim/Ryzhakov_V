@@ -3,17 +3,18 @@
 def log_execution(func):
     def wrapper(a, b):
         print('Функция запущена')
-        func(a, b)
+        result = func(a, b)
         print('Функция завершена')
+        return result
     return wrapper
 
 
 @log_execution
 def calculate_sum(a, b):
-    print(a + b)
+    return a + b
 
 
-calculate_sum(5, 3)
+print(calculate_sum(5, 3))
 
 
 # ЗАДАНИЕ 2: @property и @classmethod
@@ -57,7 +58,7 @@ print(book2.get_info())
 
 
 def find_log_entries(type_mistake: str):
-    with open("C:/Users/Вадим/PycharmProjects/Ryzhakov_V/data_test/application.log") as file:
+    with open("data_test/application.log") as file:
         for line in file:
             if type_mistake in line:
                 print(line)
