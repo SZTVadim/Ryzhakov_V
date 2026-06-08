@@ -6,7 +6,8 @@ def test_create_pet():
         pet = create_pet()
         assert pet.status_code == 200, f"Ожидали статус код 200, получили {pet.status_code}"
         assert "id" in pet.json(), f"Ожидали, что ключ id находится внутри {pet.json()} "
-        assert isinstance(pet.json()["id"], int), f"Ожидали получить Id питомца в виде int а, получили {pet.json()['id']}"
+        assert isinstance(pet.json()["id"],
+                          int), f"Ожидали получить Id питомца в виде int а, получили {pet.json()['id']}"
     finally:
         delete_pet(pet.json()["id"])
 
