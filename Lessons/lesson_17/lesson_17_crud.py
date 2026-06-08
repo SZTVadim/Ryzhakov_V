@@ -18,16 +18,7 @@ def receive_json_for_create(id_pet, category_id_pet, category_name_pet, pet_name
 photo_pet_1 = "https://avatars.mds.yandex.net/i?id=754577ce633ab29ea7ccdbd056f1dc28ffaed6c7-16467138-images-thumbs&ref=rim&n=33&w=120&h=180"
 photo_pet_2 = "https://avatars.mds.yandex.net/i?id=6d1c911b8dc680c20870908e9549c45c89489102-5858835-images-thumbs&n=13"
 
-data = receive_json_for_create(
-    24051989,
-    7,
-    "Cat",
-    "Tishka",
-    photo_pet_1,
-    7,
-    "friendly",
-    "pending"
-)
+data = receive_json_for_create(24051989, 7, "Cat", "Tishka", photo_pet_1, 7, "friendly", "pending")
 
 
 def create_pet():
