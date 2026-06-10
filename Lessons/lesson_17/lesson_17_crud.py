@@ -1,12 +1,18 @@
 import requests
 
 BASE_URL = 'https://petstore.swagger.io/'
-ENDPOINT_1 = 'v2/pet'
+ENDPOINT = 'v2/pet'
 HEADERS = {"accept": "application/json"}
 
 
-def receive_json_for_create(id_pet, category_id_pet, category_name_pet, pet_name, photo_pet, tags_id, personality_pet,
-                            status):
+def receive_json_for_create(
+        id_pet,
+        category_id_pet,
+        category_name_pet,
+        pet_name, photo_pet,
+        tags_id,
+        personality_pet,
+        status):
     return {"id": id_pet,
             "category": {"id": category_id_pet, "name": category_name_pet},
             "name": pet_name, "photoUrls": [photo_pet],
@@ -30,12 +36,12 @@ data = receive_json_for_create(
 
 
 def create_pet():
-    response_create_pet = requests.post(url=f"{BASE_URL}{ENDPOINT_1}", headers=HEADERS, json=data)
+    response_create_pet = requests.post(url=f"{BASE_URL}{ENDPOINT}", headers=HEADERS, json=data)
     return response_create_pet
 
 
 def get_pet(id_pet):
-    response_get_pet = requests.get(url=f"{BASE_URL}{ENDPOINT_1}/{id_pet}", headers=HEADERS)
+    response_get_pet = requests.get(url=f"{BASE_URL}{ENDPOINT}/{id_pet}", headers=HEADERS)
     return response_get_pet
 
 
@@ -48,10 +54,10 @@ def put_pet(id_pet):
         photo_pet_2, 6,
         "agressive",
         "available")
-    response_put_pet = requests.put(url=f"{BASE_URL}{ENDPOINT_1}", headers=HEADERS, json=update_pet_data)
+    response_put_pet = requests.put(url=f"{BASE_URL}{ENDPOINT}", headers=HEADERS, json=update_pet_data)
     return response_put_pet
 
 
 def delete_pet(id_pet):
-    response_del_pet = requests.delete(url=f"{BASE_URL}{ENDPOINT_1}/{id_pet}", headers=HEADERS)
+    response_del_pet = requests.delete(url=f"{BASE_URL}{ENDPOINT}/{id_pet}", headers=HEADERS)
     return response_del_pet
