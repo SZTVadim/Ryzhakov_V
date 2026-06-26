@@ -1,4 +1,4 @@
-#CSS
+# CSS
 
 button_left = ".bi-chevron-left"
 placeholder_search = ".oxd-input--active"
@@ -9,7 +9,7 @@ profile = ".oxd-userdropdown-tab"
 title = "span[title='Engineering']"
 widget = ".orangehrm-dashboard-widget:nth-of-type(2)"
 
-#XPath
+# XPath
 
 button_left2 = "//*[contains(@class, 'bi-chevron-left')]"
 placeholder_search2 = "//input[@placeholder='Search']"
@@ -19,5 +19,3 @@ button_upgrade2 = "//button[contains(@class, 'orangehrm-upgrade-button')]"
 profile2 = "//span[@class='oxd-userdropdown-tab']"
 title2 = "//span[@title='Engineering']"
 widget2 = "(//div[contains(@class, 'oxd-grid-item--gutters')and contains(@class, 'oxd-grid-item')])[2]"
-
-
