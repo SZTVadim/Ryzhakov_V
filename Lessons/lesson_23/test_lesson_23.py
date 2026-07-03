@@ -1,7 +1,7 @@
 from playwright.sync_api import expect, Page
 
 
-def test_sub(page:Page):
+def test_sub(page: Page):
     page.goto("https://www.qa-practice.com/forms/practice-form")
     expect(page).to_have_url("https://www.qa-practice.com/forms/practice-form")
     page.get_by_role("textbox", name="First Name").fill("jgh")
